@@ -1,0 +1,55 @@
+.demo-input .el-select .el-input {
+  width: 130px;
+}
+.demo-input .el-input {
+  width: 180px;
+}
+.demo-input .el-textarea {
+  width: 414px;
+}
+.demo-input .el-input-group {
+  width: 100%;
+}
+.demo-input .demo-input-size .el-input {
+  vertical-align: top;
+  margin: 0 10px 10px 0;
+}
+.demo-input .input-with-select .el-input-group__prepend {
+  background-color: #fff;
+}
+.demo-input .demo-autocomplete {
+  text-align: center;
+}
+.demo-input .demo-autocomplete .sub-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #8492a6;
+}
+.demo-input .demo-autocomplete .tm-col:not(:last-child) {
+  border-right: 1px solid rgba(224, 230, 237, 0.5);
+}
+.demo-input .demo-autocomplete .el-autocomplete {
+  text-align: left;
+}
+.el-autocomplete-suggestion.my-autocomplete li {
+  line-height: normal;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.el-autocomplete-suggestion.my-autocomplete li .name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.el-autocomplete-suggestion.my-autocomplete li .addr {
+  font-size: 12px;
+  color: #b4b4b4;
+}
+.el-autocomplete-suggestion.my-autocomplete li .highlighted .addr {
+  color: #ddd;
+}
+.demo-input-suffix {
+  margin-bottom: 15px;
+}
+.demo-input-suffix .el-input {
+  margin-right: 15px;
+}

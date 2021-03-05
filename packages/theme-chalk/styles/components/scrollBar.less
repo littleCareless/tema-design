@@ -1,0 +1,70 @@
+@scroll-prefix-cls: ~"@{css-prefix}scrollbar";
+
+.@{scroll-prefix-cls} {
+  overflow: hidden;
+  position: relative;
+
+  &:hover,
+  &:active,
+  &:focus {
+    >.tm-scrollbar__bar {
+      opacity: 1;
+      transition: opacity 340ms ease-out;
+    }
+  }
+
+  .tm-scrollbar__wrap {
+    overflow: scroll;
+    height: 100%;
+
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .tm-scrollbar__thumb {
+    position: relative;
+    display: block;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    border-radius: inherit;
+    background-color: rgba(#909399, .3);
+    transition: .3s background-color;
+
+    &:hover {
+      background-color: rgba(#909399, .5);
+    }
+  }
+
+  .tm-scrollbar__bar {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    z-index: 1;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 120ms ease-out;
+
+    &.is-vertical {
+      width: 6px;
+      top: 2px;
+
+      >div {
+        width: 100%;
+      }
+    }
+
+    &.is-horizontal {
+      height: 6px;
+      left: 2px;
+
+      >div {
+        height: 100%;
+      }
+    }
+  }
+}
